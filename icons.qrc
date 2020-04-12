@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/icons">
+        <file>icons8-image-file-64.png</file>
+        <file>icons8-new-64.png</file>
+        <file>icons8-synchronize-64.png</file>
+        <file>icons8-rainbow-64.png</file>
+        <file>icons8-money-box-64.png</file>
+    </qresource>
+</RCC>
