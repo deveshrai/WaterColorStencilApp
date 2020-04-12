@@ -221,3 +221,11 @@ void MainWindow::on_actionSave_triggered()
         bI.save(filename);
 
 }
+
+void MainWindow::on_actionNew_triggered()
+{
+    ui->ImageLabel->setPixmap(QPixmap());
+    img=QImage();
+
+
+}

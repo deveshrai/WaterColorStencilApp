@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QFileDialog>
 #include <vector>
+#include <QPixmap>
 
 #include "colorsetter.h"
 
@@ -39,6 +40,8 @@ private slots:
     void on_actionReloadColors_triggered();
 
     void on_actionSave_triggered();
+
+    void on_actionNew_triggered();
 
 private:
     Ui::MainWindow *ui;
