@@ -1,5 +1,5 @@
 # Watercolor Stencil App
 
 
-![Screeenshots](screens.gif)
+![Screeenshots](Screens.gif)
 
