@@ -20,7 +20,7 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    void setPrimaryColors(QColor newColor1,QColor newColor2,QColor newColor3,QColor newColor4);
+    void setPrimaryColors(QColor newColor1,QColor newColor2,QColor newColor3,QColor newColor4,QColor newColor5);
 
 private slots:
     void on_actionOpen_triggered();
@@ -49,7 +49,7 @@ private:
     QImage coloredImage;
     int colorMode=0;
     QImage bI;
-    QImage nI, iC1,iC2,iC3,iC4;
+    QImage nI, iC1,iC2,iC3,iC4,iC5;
     QImage img;
 
 

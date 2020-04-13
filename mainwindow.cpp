@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //this->colors.append(qRgb(25,25,25)); //Black
+    this->colors.append(qRgb(25,25,25)); //Black
     this->colors.append(qRgb(0,125,92)); //Dark Green
     this->colors.append(qRgb(240,219,41)); //Yellow
     this->colors.append(qRgb(220,36,28)); //Dark Red
@@ -22,8 +22,9 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::setPrimaryColors(QColor newColor1,QColor newColor2,QColor newColor3,QColor newColor4)
+void MainWindow::setPrimaryColors(QColor newColor1,QColor newColor2,QColor newColor3,QColor newColor4,QColor newColor5)
 {
+    ui->Color5Button->setStyleSheet("background:rgb("+QString::number(newColor5.red())+","+QString::number(newColor5.green())+","+QString::number(newColor5.blue())+");border:none;");
     ui->Color4Button->setStyleSheet("background:rgb("+QString::number(newColor4.red())+","+QString::number(newColor4.green())+","+QString::number(newColor4.blue())+");border:none;");
     ui->Color3Button->setStyleSheet("background:rgb("+QString::number(newColor3.red())+","+QString::number(newColor3.green())+","+QString::number(newColor3.blue())+");border:none;");
     ui->Color2Button->setStyleSheet("background:rgb("+QString::number(newColor2.red())+","+QString::number(newColor2.green())+","+QString::number(newColor2.blue())+");border:none;");
@@ -33,6 +34,7 @@ void MainWindow::setPrimaryColors(QColor newColor1,QColor newColor2,QColor newCo
     colors.append(qRgb(newColor2.red(),newColor2.green(),newColor2.blue()));
     colors.append(qRgb(newColor3.red(),newColor3.green(),newColor3.blue()));
     colors.append(qRgb(newColor4.red(),newColor4.green(),newColor4.blue()));
+    colors.append(qRgb(newColor5.red(),newColor5.green(),newColor5.blue()));
 
 }
 

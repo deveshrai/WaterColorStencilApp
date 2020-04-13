@@ -30,9 +30,11 @@ private slots:
 
     void on_buttonBox_accepted();
 
+    void on_col5btn_clicked();
+
 private:
     Ui::colorsetter *ui;
-    QColor newColor1,newColor2,newColor3,newColor4;
+    QColor newColor1,newColor2,newColor3,newColor4,newColor5;
 
 };
 

@@ -49,6 +49,12 @@ void colorsetter::on_col4btn_clicked()
 void colorsetter::on_buttonBox_accepted()
 {
     MainWindow *par = qobject_cast<MainWindow*> (parent());
-    par->setPrimaryColors(newColor1,newColor2,newColor3,newColor4);
+    par->setPrimaryColors(newColor1,newColor2,newColor3,newColor4,newColor5);
 
+}
+
+void colorsetter::on_col5btn_clicked()
+{
+    newColor5=QColorDialog::getColor();
+    ui->col5btn->setStyleSheet("background:rgb("+QString::number(newColor5.red())+","+QString::number(newColor5.green())+","+QString::number(newColor5.blue())+");border:none;");
 }
