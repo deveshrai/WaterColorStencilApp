@@ -20,7 +20,7 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    void setPrimaryColors(QColor newColor1,QColor newColor2,QColor newColor3,QColor newColor4,QColor newColor5);
+    void setPrimaryColors(QColor newColor1,QColor newColor2,QColor newColor3,QColor newColor4,QColor newColor5,QColor newColor6, QColor newColor7);
 
 private slots:
     void on_actionOpen_triggered();
@@ -43,13 +43,17 @@ private slots:
 
     void on_actionNew_triggered();
 
+    void on_Color6Button_clicked();
+
+    void on_Color7Button_clicked();
+
 private:
     Ui::MainWindow *ui;
     QVector <QRgb> colors;
     QImage coloredImage;
     int colorMode=0;
-    QImage bI;
-    QImage nI, iC1,iC2,iC3,iC4,iC5;
+    QImage bI,cI, kI;
+    QImage nI, iC1,iC2,iC3,iC4,iC5,iC6,iC7;
     QImage img;
 
 

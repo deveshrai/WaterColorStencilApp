@@ -18,7 +18,6 @@ public:
     ~colorsetter();
 
 private slots:
-    void on_pushButton_clicked();
 
     void on_col1btn_clicked();
 
@@ -32,9 +31,13 @@ private slots:
 
     void on_col5btn_clicked();
 
+    void on_col6btn_clicked();
+
+    void on_col7btn_clicked();
+
 private:
     Ui::colorsetter *ui;
-    QColor newColor1,newColor2,newColor3,newColor4,newColor5;
+    QColor newColor1,newColor2,newColor3,newColor4,newColor5,newColor6,newColor7;
 
 };
 

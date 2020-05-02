@@ -13,10 +13,7 @@ colorsetter::~colorsetter()
     delete ui;
 }
 
-void colorsetter::on_pushButton_clicked()
-{
 
-}
 
 void colorsetter::on_col1btn_clicked()
 {
@@ -49,7 +46,7 @@ void colorsetter::on_col4btn_clicked()
 void colorsetter::on_buttonBox_accepted()
 {
     MainWindow *par = qobject_cast<MainWindow*> (parent());
-    par->setPrimaryColors(newColor1,newColor2,newColor3,newColor4,newColor5);
+    par->setPrimaryColors(newColor1,newColor2,newColor3,newColor4,newColor5,newColor6,newColor7);
 
 }
 
@@ -57,4 +54,18 @@ void colorsetter::on_col5btn_clicked()
 {
     newColor5=QColorDialog::getColor();
     ui->col5btn->setStyleSheet("background:rgb("+QString::number(newColor5.red())+","+QString::number(newColor5.green())+","+QString::number(newColor5.blue())+");border:none;");
+}
+
+void colorsetter::on_col6btn_clicked()
+{
+    newColor6=QColorDialog::getColor();
+    ui->col6btn->setStyleSheet("background:rgb("+QString::number(newColor6.red())+","+QString::number(newColor6.green())+","+QString::number(newColor6.blue())+");border:none;");
+
+}
+
+void colorsetter::on_col7btn_clicked()
+{
+    newColor7=QColorDialog::getColor();
+    ui->col7btn->setStyleSheet("background:rgb("+QString::number(newColor7.red())+","+QString::number(newColor7.green())+","+QString::number(newColor7.blue())+");border:none;");
+
 }
